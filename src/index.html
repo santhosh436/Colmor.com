@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="shadow-md h-16 flex items-center px-8 bg-white fixed w-screen">
+      <!-- Logo and Navbar Head -->
+      <div class="flex items-center sm:space-x-3">
+          <img src="../capstone_colmar_assets/images/ic-logo.svg" alt="Logo" class="h-8 sm:w-auto ">
+          <span class="text-xl font-bold invisible sm:visible">Navbar Head</span>
+      </div>
+
+      <!-- Navigation Items -->
+      <div class="flex-1 flex  sm:justify-end items-center space-x-4 ml-4">
+          <a href="#" class="hidden md:inline font-semibold text-lg">On Campus</a>
+          <a href="#" class="hidden md:inline font-semibold text-lg">Online </a>
+          <a href="#" class="hidden md:inline font-semibold text-lg">or Companies</a>
+          <a href="#" class="hidden md:inline font-semibold text-lg">Sign in</a>
+      </div>
+
+      <!-- Mobile Icons -->
+      <div class="flex justify-center  space-x-16 md:hidden">
+          <button class="p-2">
+              <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <button class="p-2">
+              <i class="fa-solid fa-desktop"></i>
+          </button>
+          <button class="p-2">
+              <i class="fa-solid fa-user-tie"></i>
+          </button>
+      </div>
+  </nav>
+
+  <!-- Second Section  -->
+  <div class="py-5 sm:py-0">
+      <section class="flex flex-col md:flex-row items-center justify-center p-3 bg-gray-300 shadow-lg rounded-lg h-screen">
+          <!-- Column 1: Image -->
+          <div class="md:w-1/2 flex flex-col justify-center mb-4 md:mb-0 sm:ml-5 pt-10">
+              <img src="../capstone_colmar_assets/images/banner.jpg" alt="Placeholder Image" class="sm:w-12/12 h-full sm:max-w-2xl rounded-lg shadow-md object-cover">
+          </div>
+          
+          <!-- Column 2: Text Content -->
+          <div class="md:w-1/2 text-center md:text-left sm:ml-20">
+              <h1 class="text-4xl text-gray-700 font-bold mb-4 content">Learn something <br>new everyday</h1>
+              <p class="text-gray-600 font-semibold mb-6 text-xl">Embrace the journey of learning every day <br><span class="ml-4">each small step adds up to great progress</span>.</p>
+              <a href="#" class="inline-block w-64 text-center px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition duration-300 sm:ml-16">start Here</a>
+          </div>
+      </section>
+  </div>
+  <!-- third Section -->    
+  <section class="w-full h-[700px] flex flex-wrap lg:flex-nowrap">
+    <!-- First Column -->
+    <div class="w-full lg:w-1/2 p-6 sm:pr-0 lg:flex hidden flex-col justify-center items-start">
+      <img src="../capstone_colmar_assets/images/information-main.jpg" alt="Image" class="mb-4">
+      <h2 class="text-2xl font-bold mb-2">
+        It doesn't hurt to keep practicing</h2>
+      <p class="text-md mb-4">Absolutely! Here’s a short paragraph on the importance of practice:
+
+        "Consistent practice is the key to mastering any skill. Each session hones your abilities and builds your confidence, turning challenges into opportunities for growth. Embrace every practice moment, as it paves the way to achieving excellence and success."</p>
+        <p>Emanuel, Sr Strategist at Hiring.com</p>
+    </div>
+  
+    <!-- Second Column -->
+    <div class="w-full lg:w-1/2 pt-10 flex flex-col justify-around h-full py-10 sm:pl-10 ">
+      <!-- Row 1 -->
+      <div class="flex flex-col sm:flex-row justify-around items-center sm:h-40 hover:bg-gray-300">
+        <div class="sm:w-60 h-40">
+          <img src="../capstone_colmar_assets/images/information-campus.jpg" alt="1 Image" class="hidden sm:inline w-full h-full object-cover">
+          <img src="../capstone_colmar_assets/images/information-campus-mobile.jpg" alt="1 Image" class="inline sm:hidden h-full w-full object-cover">
+        </div>
+        <div class="w-full sm:w-1/2 h-full flex flex-col sm:justify-center text-center sm:items-start sm:mr-16">
+          <p class="font-bold text-2xl mb-2">Orientation Date</p>
+          <p>Tue 10/11 & Wed 10/12 :8am-3pm</p>
+          <p class="text-blue-700">Read more</p>
+        </div>
+      </div>
+  
+      <!-- Row 2 -->
+      <div class="flex flex-col sm:flex-row justify-around sm:h-40 hover:bg-gray-300">
+        <div class="sm:w-60 h-40 ">
+          <img src="../capstone_colmar_assets/images/information-guest-lecture.jpg" alt="Row 2 Image" class="hidden sm:inline w-full h-full object-cover">
+          <img src="../capstone_colmar_assets/images/information-guest-lecture-mobile.jpg" alt="Row 2 Image" class="inline sm:hidden h-full w-full object-cover">
+        </div>
+        <div class="w-full sm:w-1/2 h-full flex flex-col text-center sm:justify-center sm:items-start sm:mr-16">
+          <p class="font-bold mb-2 text-2xl">Our Campus </p>
+          <p>Find which Campus is close by you</p>
+          <p class="text-blue-700">Read more</p>
+        </div>
+      </div>
+  
+      <!-- Row 3 -->
+      <div class="flex flex-col sm:flex-row justify-around items-center sm:h-40 hover:bg-gray-300">
+        <div class="sm:w-60 h-40">
+          <img src="../capstone_colmar_assets/images/information-orientation.jpg" alt="Row 3 Image" class="hidden sm:inline w-full h-full object-cover">
+          <img src="../capstone_colmar_assets/images/information-orientation-mobile.jpg" alt="Row 3 Image" class="inline sm:hidden h-full w-full object-cover">
+        </div>
+        <div class="w-full sm:w-1/2 h-full flex flex-col text-center sm:justify-center  sm:items-start sm:mr-16">
+          <p class="font-bold mb-2 text-2xl">Special guest lecture </p>
+          <p>Join a keynote with Oliver Sack about
+            music in medical treatment</p>
+          <p class="text-blue-700">Read more</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  
+  
+  <!-- Responsive styles for mobile devices -->
+ 
+  
+
+  <!-- fourth Section -->
+  <div class="w-full mt-48 sm:mt-0 bg-gray-200 flex flex-col items-center py-20">
+    <!-- Title at the top -->
+    <h2 class="text-3xl font-bold mb-8 text-center">Start Learning</h2>
+  
+    <!-- Carts container -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl px-4">
+      <!-- Cart 1 -->
+      <div class="bg-white rounded-lg shadow-md p-4">
+        <img src="../capstone_colmar_assets/images/course-software.jpg" alt="Image 1" class="w-full h-40 object-cover rounded-md mb-4 hidden sm:inline ">
+        <h3 class="text-xl font-semibold mb-2">Software Engineering
+        <h4 class="text-md font-medium text-gray-500 mb-3 hidden sm:inline ">Courses</h4>
+        <p class="text-sm text-gray-600 line-clamp-3 hidden sm:inline">Web Development,Mobile Development,into,API's.</p>
+      </div>
+  
+      <!-- Repeat the structure for the other 5 carts -->
+      <div class="bg-white rounded-lg shadow-md p-4">
+        <img src="../capstone_colmar_assets/images/course-computer-art.jpg" alt="Image 2" class="w-full h-40 object-cover rounded-md mb-4 hidden sm:inline ">
+        <h3 class="text-xl font-semibold mb-2">Computer Art</h3>
+        <h4 class="text-md font-medium text-gray-500 mb-3 hidden sm:inline ">COURSES</h4>
+        <p class="text-sm text-gray-600 line-clamp-3 hidden sm:inline">
+          Imaging & Design, Web Design,
+          Motion Graphics & Visual Effects,
+          Computer Animation.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-md p-4">
+        <img src="../capstone_colmar_assets/images/course-design.jpg" alt="Image 2" class="w-full h-40 object-cover rounded-md mb-4 hidden sm:inline ">
+        <h3 class="text-xl font-semibold mb-2">Design</h3>
+        <h4 class="text-md font-medium text-gray-500 mb-3 hidden sm:inline ">COURSES</h4>
+        <p class="text-sm text-gray-600 line-clamp-3 hidden sm:inline">
+          User Experience Design, User
+          Research, Visual Design.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-md p-4">
+        <img src="../capstone_colmar_assets/images/course-data.jpg" alt="Image 2" class="w-full h-40 object-cover rounded-md mb-4 hidden sm:inline ">
+        <h3 class="text-xl font-semibold mb-2">Data</h3>
+        <h4 class="text-md font-medium text-gray-500 mb-3 hidden sm:inline ">COURSES</h4>
+        <p class="text-sm text-gray-600 line-clamp-3 hidden sm:inline">Data Science, Big Data, SQL, Data
+          Visualization.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-md p-4">
+        <img src="../capstone_colmar_assets/images/course-business.jpg" alt="Image 2" class="w-full h-40 object-cover rounded-md mb-4 hidden sm:inline">
+        <h3 class="text-xl font-semibold mb-2">Business</h3>
+        <h4 class="text-md font-medium text-gray-500 mb-3 hidden sm:inline ">COURSES</h4>
+        <p class="text-sm text-gray-600 line-clamp-3 hidden sm:inline">Product Development, Business
+          Development, Startup.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-md p-4">
+        <img src="../capstone_colmar_assets/images/course-marketing.jpg" alt="Image 2" class="w-full h-40 object-cover rounded-md mb-4 hidden sm:inline">
+        <h3 class="text-xl font-semibold mb-2">Marketing</h3>
+        <h4 class="text-md font-medium text-gray-500 mb-3 hidden sm:inline ">COURSES</h4>
+        <p class="text-sm text-gray-600 line-clamp-3 hidden sm:inline">Analytics, Content Marketing,
+          Mobile Marketing.</p>
+      </div>
+  
+      <!-- Repeat for Cart 3 to Cart 6 -->
+    </div>
+  </div>
+
+  <!-- fifth Section -->
+  <section class="w-full h-[500px] flex flex-wrap lg:flex-nowrap">
+    <!-- First Column -->
+    <div class="w-full lg:w-1/2 p-6 sm:mt-16 sm:pr-0 lg:flex flex-col justify-center items-start">
+      <video class="h-64 sm:h-full" controls><source src="../capstone_colmar_assets/videos/thesis.mp4" type="video/mp4"></video>
+      <h2 class="text-2xl font-bold mb-2">
+        Reimagining urban</h2>
+      <p class="text-md">Reimagining urban spaces involves transforming cities into more sustainable, inclusive, and livable environments. By prioritizing green spaces, efficient public transport, and innovative infrastructure, we can create urban areas that not only meet the needs of today but also anticipate the demands of the future</p>
+    </div>
+  
+    <!-- Second Column -->
+    <div class="w-full lg:w-1/2 pt-4 hidden flex-col h-full py-10 sm:pl-10 mt-10   sm:inline ">
+      <!-- Row 1 -->
+      <div class="flex flex-col sm:flex-row justify-around items-center sm:h-40 hover:bg-gray-300 mb-10">
+        <div class="sm:w-60 h-40">
+          <img src="../capstone_colmar_assets/images/thesis-fisma.jpg" alt="1 Image" class="hidden sm:inline w-full h-full object-cover">
+          <img src="../capstone_colmar_assets/images/thesis-fisma.jpg" alt="1 Image" class="inline sm:hidden h-full w-full object-cover">
+        </div>
+        <div class="w-full sm:w-1/2 h-full flex flex-col sm:justify-center text-center sm:items-start sm:mr-16">
+          <p class="font-bold text-2xl mb-2">Figma Desing and Prototype</p>
+          <p class="text-left">Designer showcase of new <br> Prototype Product</p>
+          <p class="text-blue-700">Read more</p>
+        </div>
+      </div>
+  
+      <!-- Row 2 -->
+      <div class="flex flex-col sm:flex-row justify-around sm:h-40 hover:bg-gray-300">
+        <div class="sm:w-60 h-40 ">
+          <img src="../capstone_colmar_assets/images/thesis-now-and-then.jpg" alt="Row 2 Image" class="hidden sm:inline w-full h-full object-cover">
+          <img src="../capstone_colmar_assets/images/thesis-now-and-then.jpg" alt="Row 2 Image" class="inline sm:hidden h-full w-full object-cover">
+        </div>
+        <div class="w-full sm:w-1/2 h-full flex flex-col text-center sm:justify-center sm:items-start sm:mr-16">
+          <p class="font-bold mb-2 text-2xl">Now and then </p>
+          <p>Reasearch study about New York</p>
+          <p class="text-blue-700">Read more</p>
+        </div>
+      </div>  
+    </div>
+  </section>
+  <div class="mt-16 flex flex-col sm:flex-row justify-around sm:justify-between bg-blue-100 h-24 items-center">
+    <p>@colmar academy. All rights resevered</p>
+    <div class="flex">
+      <p class="mr-5">terms</p>
+      <p>privacy</p>
+    </div>
+  </div>
+  
+  
+</body>
+</html>
